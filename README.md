@@ -7,9 +7,9 @@ Course: hardware acceleration.
 * Generate three automaton (1KB, 1MB and 100MB):
 ```
 g++ generator.cpp -O3 -o gen
-./gen 1K
-./gen 1M
-./gen 100M
+./gen --size 1K
+./gen --size 1M
+./gen --size 100M
 ```
 * For `rule110.cpp`, there are two compile options: `-DCELL_TYPE=int` or `-DCELL_TYPE=std::uint8_t`.
 ```
